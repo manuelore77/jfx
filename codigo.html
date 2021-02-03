@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>M@nuel Ortega - codigo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Licenciado, Informatica, desarrollo , software, redes, windows, linux, juan, manuel, ortega, felix">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/css/theme/style.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link href="assets/js/prettify.css" rel="stylesheet">
+    <script src="assets/js/prettify.js"></script>
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet" />
+	  <link href="https://fonts.googleapis.com/icon?family=Roboto:200,400,700" rel="stylesheet" />
+  </head>
+
+  <body onload="prettyPrint()" bgcolor="white">
+
+    <section class="mt-0 mb-0 pb-0 bg-dark text-light header-60" style="background: url(https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&amp;fit=crop&amp;w=2027&amp;q=60&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);">
+      <div class="header-overlay-red header-60 pb-3 pt-1">
+        <div class="container pt-3 ">
+
+          <nav class="navbar navbar-dark   navbar-expand-lg   bg-transparent">
+            <a class="navbar-brand" href="index.html">home</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					  </button>
+
+            <div class="navbar-collapse collapse" id="navbarsExampleDefault">
+
+              <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+					<li class="nav-item">
+					  <a class="nav-link" href="codigo.html">codigo</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="stuff.html">stuff</a>
+					</li>
+					<!--<li class="nav-item">
+					  <a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Link</a>
+					</li>-->
+				</ul>
+            </div>
+          </nav>
+          
+        </div>
+      </div>
+
+    </section>
+    
+    <section class="pb-0 mb-0">
+      <div class="container">
+        <div class="row mt-0    d-flex justify-content-center align-items-center text-center">
+          <div class="col-8 text-center">
+            <h2 class="display-3 mt-5 pt-3 mb-3">Codigo</h2>
+          </div>
+        </div><br>
+
+        <div class="row">
+          <div>
+            Hace ya algunos años personal de Microsoft desarrollo la interfaz Modern UI (Metro), en las siguientes lineas se puede ver una emulacion que se asemeja a su funcionamiento utilizando el plugin de JQuery <code>carouFredSel</code>.
+
+            <pre class="prettyprint linenums languague-html" style="margin-top:30px;">
+// llamamos los javascript
+...
+type="text/javascript" language="javascript" src="js/jquery-1.8.2.min.js">
+type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.2.0-packed.js">
+...
+            </pre>
+
+            <pre class="prettyprint linenums languague-html" style="margin-top:30px;">
+// se le da estilo a los carruseles
+...
+.html_carousel {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    position: relative;
+  }
+  .html_carousel img {
+    width:350px;
+    height:400px;
+  }
+  .html_carousel div.slide {
+    width: 350px;
+    height: 400px;
+    position: relative;
+  }
+  .html_carousel div.slide div {
+    background-color: rgb(0, 104, 208);
+    background-color: rgba(0, 104, 208, 1);
+    width:350px;
+    display: none;
+    position: absolute;
+    bottom: 0;
+  }
+  .html_carousel div.slide p {
+    color: white;
+    padding: 20px 20px 20px 20px;
+    margin: 0;
+  }
+  .html_carousel2 {
+    position:absolute;
+    left:350px; 
+    top:0px; 
+    width:350px; 
+  }
+  .html_carousel2 img {
+    width:350px;
+    height:400px;
+  }
+  .html_carousel2 div.slide {
+    width: 350px;
+    height: 400px;
+    position: relative;
+  }
+  .html_carousel2 div.slide div {
+    background-color: rgb(0, 146, 168);
+    background-color: rgba(0, 146, 168, 1);
+    width:350px;
+    display: none;
+    position: absolute;
+    top:0;
+  }
+  .html_carousel2 div.slide p {
+    color: white;
+    padding: 20px 20px 20px 20px;
+    margin: 0;
+  }
+  .html_carousel3 {
+    position:absolute;
+    left:700px;
+    top:248px; 
+    width:298px;
+  }
+  .html_carousel3 div.slide {
+    width: 298px;
+    height: 482px;
+    position: relative;
+  }
+  .html_carousel3 div.slide div {
+    background-color: rgb(0, 121, 239);
+    background-color: rgba(0, 121, 239, 1);
+    width:300px;
+    display: none;
+    position: absolute;
+    top:0px;
+    height:482px;
+  }
+  .html_carousel3 div.slide p {
+    color: white;
+    padding: 20px 20px 20px 20px;
+    margin: 0;
+  }
+  .html_carousel4 {
+    top:0px;
+    left:420px;
+    position: relative;
+  }
+  .html_carousel4 img {
+    width:280px;
+    height:200px;
+  }
+  .html_carousel4 div.slide {
+    width: 280px;
+    height: 200px;
+    position: relative;
+  }
+  .html_carousel4 div.slide div {
+    background-color: rgb(0, 104, 208);
+    background-color: rgba(0, 104, 208, 1);
+    width:280px;
+    display: none;
+    position: absolute;
+    bottom: 0;
+  }
+  .html_carousel4 div.slide p {
+    color: white;
+    padding: 20px 20px 20px 20px;
+    margin: 0;
+  }
+  ...
+            </pre>
+
+            <pre class="prettyprint linenums languague-html" style="margin-top:30px;">
+// dentro del head asignamos los parametros para cada carusel
+...
+$(function() {
+    $("#car1 .slide div").show();
+    $("#car1").carouFredSel({
+        items     : 1,
+        direction : "up",
+        auto : {
+        duration  : 1000,
+        pauseOnHover: true
+      }
+    });
+    $("#car2 .slide div").show();
+    $("#car2").carouFredSel({
+        items     : 1,
+        direction : "down",
+        auto : {
+        duration  : 1500,
+        pauseOnHover: true
+      }
+    });
+    $("#car3 .slide div").show();
+    $("#car3").carouFredSel({
+        items     : 1,
+        direction : "up",
+        auto : {
+        duration  : 2000,
+        pauseOnHover: true
+      }
+    });
+    $("#car4 .slide div").show();
+    $("#car4").carouFredSel({
+        items     : 1,
+        scroll    : {
+          fx      : "crossfade",
+          duration    : 2500
+        },
+        auto : {
+        pauseOnHover: true
+      }
+    });
+  });
+...
+            </pre>
+
+            <pre class="prettyprint linenums languague-html" style="margin-top:30px;">
+// mostramos cada carrusel ya dentro del body
+...
+div class="html_carousel">
+        div id="car1">
+              div class="slide">
+                img src="img/al_dia/47.jpg"/>
+                div>
+                  p>Nibh ultricies vehicula ut id elit./p>
+                div>
+              /div>
+              div class="slide">
+                img src="img/al_dia/46.jpg"/>
+                div>
+                  p>Egestas eget quam. Donec id elit non mi porta gravida./p>
+                /dv>
+              /div>
+      /div>
+        div class="clearfix">/div>
+    /div><!-- /html_carousel -->
+            
+     div class="html_carousel2">
+        div id="car2">
+                div class="slide">
+                img src="img/al_dia/42.jpg"/>
+                div>
+                  p>Nibh ultricies vehicula ut id elit./p>
+                /div>
+              /div>
+                div class="slide">
+                img src="img/al_dia/41.jpg"/>
+                div>
+                  p>Egestas eget quam. Donec id./p>
+                /div>
+              /div>
+        /div>
+        div class="clearfix">/div>
+    /div><!-- /html_carousel2 -->
+    
+    div style="position:absolute;left:750px; top:100px;">
+      carrusel con info del clima
+    /div>
+    
+    div style="position:absolute;left:100px; top:500px;">
+      carrusel con mas info
+    /div>
+                    
+    div class="html_carousel3">
+        div id="car3">
+            div class="slide">
+                div>
+                    p>
+                      div>Santoral/div>
+                        div> IsidroBR> LabradorBR> TorcuatoBR> TesifonteBR> Cecilio/div>
+                    /p>
+                /div>
+            /div>
+            div class="slide">
+                div>
+                    p>
+                      div>Aniversario/div>
+                        div>Pierre Curie, físico francés.(1859)/div>
+                    /p>
+                /div>
+            /div>
+        /div>
+        div class="clearfix">/div>
+    /div><!-- /html_carousel3 -->
+    
+    div class="html_carousel4">
+        div id="car4">
+            div class="slide">img src="img/1.jpg"/>/div>
+            div class="slide">img src="img/2.jpg"/>/div>
+            div class="slide">img src="img/3.jpg"/>/div>
+        /div>
+        div class="clearfix">/div>
+    /div><!-- /html_carousel4 -->
+...
+            </pre>
+
+          </div>
+        </div><br>
+
+        <div class="row">
+          <div>
+            Quedando algo asi...<br>
+            <iframe src="codigo/metro/metro.html" style="margin-top:30px;width: 75vw;height: 120vh;position: relative;" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        
+      </div>
+    </section>    
+    
+    <section class="pb-3 pt-3 bg-primary mt-5">
+      <div class="container">
+        <div class="row f-flex justify-content-between" style="justify-content: space-between;">
+          <div class="col-md-4 text-xs-center  text-center text-secondary my-1">
+            <p class="mt-2  text-light">Manuel Ortega © 2019 |  <a class="text-light" href="#">Contacto</a></p>
+          </div>
+          <!--<div class="col-md-1 text-xs-center  text-lg-left text-secondary my-1">
+            <a href="#" class="text-light"><img src="favicon.ico"></a>
+          </div>-->
+
+          <div class="col-md-3 text-xs-center   text-lg-right text-secondary my-1">
+
+            <div class="btn-container  mt-1 text-md-right text-sm-center">
+
+              <div class="mb-1 mr-3 align-self-right pt-0 d-inline-block">
+                <a href="https://twitter.com/el__menny" target="blank" role="button" class="text-light p-2 m-2 btn btn-round btn-rised btn-icon btn-primary"><img src="img/twitter.png"></a>
+                <a href="#" role="button" class="text-light p-2 m-2 btn btn-round btn-rised btn-icon btn-primary"><img src="img/facebook.png"></a>
+                <a href="https://linkedin.com/in/manuel-ortega-fe77" target="blank" role="button" class="text-light p-2 m-2 btn btn-round btn-rised btn-icon btn-primary"><img src="img/linkedin.png"></a>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.footer -->
+    </section>
+
+  </body>
+
+  <!-- jQuery is required -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+
+</html>
