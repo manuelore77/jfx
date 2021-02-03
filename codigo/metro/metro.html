@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Untitled Document</title>
+	<script type="text/javascript" language="javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.2.0-packed.js"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<style>
+	body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+      }
+	.html_carousel {
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+		position: relative;
+	}
+	.html_carousel img {
+		width:350px;
+		height:400px;
+	}
+	.html_carousel div.slide {
+		width: 350px;
+		height: 400px;
+		position: relative;
+	}
+	.html_carousel div.slide div {
+		background-color: rgb(0, 104, 208);
+		background-color: rgba(0, 104, 208, 1);
+		width:350px;
+		display: none;
+		position: absolute;
+		bottom: 0;
+	}
+	.html_carousel div.slide p {
+		color: white;
+		padding: 20px 20px 20px 20px;
+		margin: 0;
+	}
+	.html_carousel2 {
+		position:absolute;
+		left:350px; 
+		top:0px; 
+		width:350px; 
+	}
+	.html_carousel2 img {
+		width:350px;
+		height:400px;
+	}
+	.html_carousel2 div.slide {
+		width: 350px;
+		height: 400px;
+		position: relative;
+	}
+	.html_carousel2 div.slide div {
+		background-color: rgb(0, 146, 168);
+		background-color: rgba(0, 146, 168, 1);
+		width:350px;
+		display: none;
+		position: absolute;
+		top:0;
+	}
+	.html_carousel2 div.slide p {
+		color: white;
+		padding: 20px 20px 20px 20px;
+		margin: 0;
+	}
+	.html_carousel3 {
+		position:absolute;
+		left:700px;
+		top:248px; 
+		width:298px;
+	}
+	.html_carousel3 div.slide {
+		width: 298px;
+		height: 482px;
+		position: relative;
+	}
+	.html_carousel3 div.slide div {
+		background-color: rgb(0, 121, 239);
+		background-color: rgba(0, 121, 239, 1);
+		width:300px;
+		display: none;
+		position: absolute;
+		top:0px;
+		height:482px;
+	}
+	.html_carousel3 div.slide p {
+		color: white;
+		padding: 20px 20px 20px 20px;
+		margin: 0;
+	}
+	.html_carousel4 {
+		top:0px;
+		left:420px;
+		position: relative;
+	}
+	.html_carousel4 img {
+		width:280px;
+		height:200px;
+	}
+	.html_carousel4 div.slide {
+		width: 280px;
+		height: 200px;
+		position: relative;
+	}
+	.html_carousel4 div.slide div {
+		background-color: rgb(0, 104, 208);
+		background-color: rgba(0, 104, 208, 1);
+		width:280px;
+		display: none;
+		position: absolute;
+		bottom: 0;
+	}
+	.html_carousel4 div.slide p {
+		color: white;
+		padding: 20px 20px 20px 20px;
+		margin: 0;
+	}
+    </style>
+       
+    <script type="text/javascript" language="javascript">
+	$(function() {
+		$("#car1 .slide div").show();
+		$("#car1").carouFredSel({
+				items 		: 1,
+				direction	: "up",
+				auto : {
+				duration	: 1000,
+				pauseOnHover: true
+			}
+		});
+		$("#car2 .slide div").show();
+		$("#car2").carouFredSel({
+				items 		: 1,
+				direction	: "down",
+				auto : {
+				duration	: 1500,
+				pauseOnHover: true
+			}
+		});
+		$("#car3 .slide div").show();
+		$("#car3").carouFredSel({
+				items 		: 1,
+				direction	: "up",
+				auto : {
+				duration	: 2000,
+				pauseOnHover: true
+			}
+		});
+		$("#car4 .slide div").show();
+		$("#car4").carouFredSel({
+				items 		: 1,
+				scroll		: {
+					fx			: "crossfade",
+					duration    : 2500
+				},
+				auto : {
+				pauseOnHover: true
+			}
+		});
+	});
+	</script>
+
+</head>
+
+<body>
+
+	<div class="html_carousel">
+        <div id="car1">
+							<div class="slide">
+								<img src="img/al_dia/47.jpg" onclick="javascript:top.location.href='al_dia_detalle.php?id=47';" />
+								<div>
+									<p>Nibh ultricies vehicula ut id elit.</p>
+								</div>
+							</div>
+							<div class="slide">
+								<img src="img/al_dia/46.jpg" onclick="javascript:top.location.href='al_dia_detalle.php?id=46';" />
+								<div>
+									<p>Egestas eget quam. Donec id elit non mi porta gravida.</p>
+								</div>
+							</div>
+							<div class="slide">
+								<img src="img/al_dia/45.jpg" onclick="javascript:top.location.href='al_dia_detalle.php?id=45';" />
+								<div>
+									<p>Cras justo odio, dapibus ac facilisis in.</p>
+								</div>
+							</div>
+							<div class="slide">
+								<img src="img/al_dia/44.jpg" onclick="javascript:top.location.href='al_dia_detalle.php?id=44';" />
+								<div>
+									<p>Donec id elit non mi porta gravida.</p>
+								</div>
+							</div>
+							<div class="slide">
+								<img src="img/al_dia/43.jpg" onclick="javascript:top.location.href='al_dia_detalle.php?id=43';" />
+								<div>
+									<p>Nullam id dolor id nibh ultricies</p>
+								</div>
+							</div>
+	    </div>
+        <div class="clearfix"></div>
+    </div><!-- /html_carousel -->
+            
+     <div class="html_carousel2">
+        <div id="car2">
+							  <div class="slide">
+								<img src="img/al_dia/42.jpg" onclick="javascript:top.location.href='al_dia_detalle.php?id=42';" />
+								<div>
+									<p>Nibh ultricies vehicula ut id elit.</p>
+								</div>
+							</div>
+							  <div class="slide">
+								<img src="img/al_dia/41.jpg" onclick="javascript:top.location.href='al_dia_detalle.php?id=41';" />
+								<div>
+									<p>Egestas eget quam. Donec id.</p>
+								</div>
+							</div>
+							  <div class="slide">
+								<img src="img/al_dia/40.jpg" onclick="javascript:top.location.href='al_dia_detalle.php?id=40';" />
+								<div>
+									<p>Cras justo odio, dapibus ac facilisis in.</p>
+								</div>
+							</div>
+							  <div class="slide">
+								<img src="img/al_dia/39.jpg" onclick="javascript:top.location.href='al_dia_detalle.php?id=39';" />
+								<div>
+									<p>Donec id elit non mi porta gravida at eget metus.</p>
+								</div>
+							</div>
+							  <div class="slide">
+								<img src="img/al_dia/37.jpg" onclick="javascript:top.location.href='al_dia_detalle.php?id=37';" />
+								<div>
+									<p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+								</div>
+							</div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- /html_carousel2 -->
+    
+    <div style="position:absolute;left:750px; top:100px;">
+	    carrusel con info del clima
+    </div>
+    
+   	<div style="position:absolute;left:100px; top:500px;">
+	    carrusel con mas info
+    </div>
+    
+	
+							
+    <div class="html_carousel3">
+        <div id="car3">
+            <div class="slide">
+                <div>
+                    <p>
+                    	<div style="text-align:left; padding-left:15px; font-size:40px; color:#FFFFFF">Santoral</div>
+                        <div style="text-align:left; padding-left:15px; color:#FFFFFF; margin-top:65px;"> Isidro<BR> Labrador<BR> Torcuato<BR> Tesifonte<BR> Cecilio</div>
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div>
+                    <p>
+                    	<div style="text-align:left; padding-left:15px; font-size:40px; color:#FFFFFF">Aniversario</div>
+                        <div style="text-align:left; padding-left:15px; color:#FFFFFF; margin-top:65px; width:265px;">Pierre Curie, físico francés.(1859)</div>
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div>
+                    <p>
+                    	<div style="text-align:left; padding-left:15px; font-size:40px; color:#FFFFFF">Efemerides</div>
+                        <div style="text-align:left; padding-left:15px; color:#FFFFFF; margin-top:65px; width:265px;">
+	                        <b>1930 -</b> Se realiza en EEUU el Primer Vuelo con Azafatas.<BR><b>1940 -</b> Aparecen en los Estados Unidos de América las primeras medias de nylon a la venta.<BR><b>1970 -</b> Se edita en Estados Unidos Let it be, el último disco de los Beatles.<BR><b>1985 -</b> Advertencia por parte de la Organización Mundial de la Salud sobre el SIDA y su efecto de epidemia.<BR><BR><b>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- /html_carousel3 -->
+    
+   	<div class="html_carousel4">
+        <div id="car4">
+            <div class="slide"><img src="img/sonora/1.jpg"/></div>
+            <div class="slide"><img src="img/sonora/2.jpg"/></div>
+            <div class="slide"><img src="img/sonora/3.jpg"/></div>
+            <div class="slide"><img src="img/sonora/4.jpg"/></div>
+            <div class="slide"><img src="img/sonora/5.jpg"/></div>
+            <div class="slide"><img src="img/sonora/6.jpg"/></div>
+            <div class="slide"><img src="img/sonora/7.jpg"/></div>
+            <div class="slide"><img src="img/sonora/8.jpg"/></div>
+            <div class="slide"><img src="img/sonora/9.jpg"/></div>
+            <div class="slide"><img src="img/sonora/10.jpg"/></div>
+            <div class="slide"><img src="img/sonora/11.jpg"/></div>
+            <div class="slide"><img src="img/sonora/12.jpg"/></div>
+            <div class="slide"><img src="img/sonora/13.jpg"/></div>
+            <div class="slide"><img src="img/sonora/14.jpg"/></div>
+            <div class="slide"><img src="img/sonora/15.jpg"/></div>
+            <div class="slide"><img src="img/sonora/16.jpg"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- /html_carousel4 -->
+    
+    <div style="position:absolute;left:420px; top:600px;">
+	    <img src="img/redes2.jpg" width="280" height="130" />
+    </div>
+
+</body>
+</html>
